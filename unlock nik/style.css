@@ -25,6 +25,12 @@ body{
     max-width: 200px;
     size:2px ;
      margin-right: 150px;
+     
+}
+#logo-img{
+   animation-name: run;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 #nav-menu{
@@ -45,6 +51,7 @@ li a{
     padding: 8px 12px;
     border: #ef0000 2px solid;
     border-radius: 4px;
+    
 }
 
 li a:hover{
@@ -204,17 +211,17 @@ input, select, textarea {
 }
 
 @keyframes oname {
-   0%   {background-color:red; left:0px; top:0px;}
-   10% {background-color:yellow; left:0px; top:0px;}
-    20%  {background-color:blue; left:0px; top:0px;}
-    30%  {background-color:green; left:0px; top:0px;}
-    40%  {background-color:pink; left:0px; top:0px;}
-    50%  {background-color:orange; left:0px; top:0px;}
-    60%  {background-color:purple; left:0px; top:0px;}
-    70%  {background-color:brown; left:0px; top:0px;}
-    80%  {background-color:grey; left:0px; top:0px;}
-    90%  {background-color:black; left:0px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
+   0%   {background-color:red; }
+   10% {background-color:yellow;}
+    20%  {background-color:blue;}
+    30%  {background-color:green; }
+    40%  {background-color:pink; }
+    50%  {background-color:orange; }
+    60%  {background-color:purple; }
+    70%  {background-color:brown;}
+    80%  {background-color:grey; }
+    90%  {background-color:black; }
+    100% {background-color:red; }
 }
 
 @keyframes rotate {
@@ -224,4 +231,19 @@ input, select, textarea {
     to {
         transform: rotate(360deg);
     }
+}
+
+
+@keyframes run {
+    0% {transform: translateX(0);}
+    10% {transform: translateX(-50px);}
+    20% {transform: translateY(50);}
+    30% {transform: translateX(100px);}
+    40% {transform: translateY(-50px);}
+    50% {transform: translateX(50px);}
+    60% {transform: translateY(-50px);}
+    70% {transform: translateX(50px);}
+    80% {transform: translateY(-50px);}
+    90% {transform: translateX(25px);}
+    100% {transform: translateX(0);}
 }
