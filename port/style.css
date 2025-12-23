@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+nav{
+    height: 55px;
+    background-color: rgb(212, 213, 212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.logo{
+    width: 15%;
+    text-align: center;
+}
+.menu{
+    width: 40%;
+}
+#menuIcon{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+#checkBox{
+    display: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.bannerRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* banner */
+.banner{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.bannerLeft{
+    width: 60%;
+    height: 300px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 50px;
+}
+.bannerRight{
+    width: 30%;
+    height: 300px;
+    border: 2px solid;
+}
+.bannerRight img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.bannerLeft h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: blue;
+}
+.change{
+    color: chocolate;
+}
+.bannerLeft p{
+    font-size: 1.3rem;
+    width: 55%;
+    font-weight: 400;
+}
+.btnCnt button{
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: crimson;
+    border: 2px solid crimson;
+    transition: all .5s;
+    color: wheat;
+    cursor: pointer;
+    font-weight: 400;
+    font-style: italic;
+}
+.btnCnt button:nth-child(1){
+    background-color: green;
+    border: 2px solid green;
+}
+.btnCnt button:nth-child(1):hover{
+    color: green;
+    background-color: #fff;
+    border: 2px solid green;
+}
+.btnCnt button:nth-child(2):hover{
+    color: crimson;
+    background-color: #fff;
+    border: 2px solid crimson;
+}
+
+#contactform{
+    width: 30%;
+    height: 400px;
+    background-color: gainsboro;
+    border: 2px solid;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    display: none;
+}
+
+#contactform label{
+    display: block;
+}
+#contactform input{
+    height: 40px;
+}
+#contactform input,
+#contactform textarea{
+    width: 95%;
+    margin: 10px 0;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+#contactform textarea{
+    height: 100px;
+}
+#contactform button{
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#contactform button:hover{
+    background-color: aqua;
+}
+.skillscnt{
+    display: flex;
+    justify-content: space-between;
+}
+.skill{
+    width: 20%;
+    height: 150px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill>i{
+    font-size: 3rem;
+    color: red;
+}
+.skill>p{
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+@media (max-width:768px) {
+    .menu{
+        display: none;
+    }
+    .banner{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }  
+    .banner .bannerLeft{
+        height: auto;
+        width: 80%;
+    }
+    .bannerLeft h1{
+        font-size: 2rem;
+    }
+    .bannerLeft p{
+        font-size: 1.2rem;
+        width: 80%;
+        font-weight: 400;
+    }
+    #contactform{
+        width: 80%;
+        font-weight: 400;
+    }
+}
+
+@media (min-width:769px) {
+    #menuIcon{
+        display: none;
+    }
+    .banner .bannerLeft{
+        width: 80%;
+        height: 300px;
+    }
+    .bannerLeft h1{
+        font-size: 2rem;
+    }
+    .bannerLeft p{
+        font-size: 1.2rem;
+        width: 80%;
+        font-weight: 400;
+    }
+}
