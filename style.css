@@ -1,47 +1,13 @@
-.box {
-    width: 100px;
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    border: 2px solid black;
-    margin: 20px;
 }
 
-p {
-    color: blue;
-}
-
-.title {
-    font-size: 24px;
-}
-
-#main-box {
-    background: yellow;
-}
-
-h1 {
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-
-button {
-    padding: 10px 20px;
-    background: black;
+.item {
+    background: #007bff;
+    padding: 20px;
     color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-header {
-    background: black;
-    color: white;
-    padding: 20px;
-}
-
-main {
-    padding: 20px;
+    border-radius: 8px;
 }
