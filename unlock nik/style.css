@@ -55,8 +55,8 @@ li a:hover{
 }
 li:hover{
     cursor: pointer;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
+      transition: 0.1s;
+    transform: rotate(360deg);
 }
 
 main{
@@ -99,7 +99,14 @@ main{
         top: -140px;
          padding: 7px;
          margin-left: 100px;
+         animation-name:rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
 }
+/* #myimg:hover{
+     transition: 4s;
+    transform: rotate(360deg);
+} */
 .all{
     padding: 0px;
     width: 200px;
@@ -111,22 +118,21 @@ main{
 .skill{
     background-color: #fffefe;
     border: #000000 2px solid;
-    color: #000000;
+    color: #ffffff;
     display: inline-block;
     padding: 8px 16px;
     border-radius: 10px;
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-   animation-name: myAnimation;
-  animation-duration: 4s;
-   animation-iteration-count: infinite;
-    
+   animation-name:oname;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .skill:hover{
     background-color:  #31cbff;
     cursor: pointer;
-     transform: scale(1.1);
+     transform: scale(3);
      transition: all 0.3s ease;
 }
 
@@ -195,4 +201,27 @@ input, select, textarea {
   50%  {background-color:blue; right:500px; top:500px;}
   75%  {background-color:green; left:1000px; top:100px;}
   100% {background-color:red; left:50px; top:0px;}
+}
+
+@keyframes oname {
+   0%   {background-color:red; left:0px; top:0px;}
+   10% {background-color:yellow; left:0px; top:0px;}
+    20%  {background-color:blue; left:0px; top:0px;}
+    30%  {background-color:green; left:0px; top:0px;}
+    40%  {background-color:pink; left:0px; top:0px;}
+    50%  {background-color:orange; left:0px; top:0px;}
+    60%  {background-color:purple; left:0px; top:0px;}
+    70%  {background-color:brown; left:0px; top:0px;}
+    80%  {background-color:grey; left:0px; top:0px;}
+    90%  {background-color:black; left:0px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
