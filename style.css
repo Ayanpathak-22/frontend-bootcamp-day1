@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #1f242d;
+    background: rgb(7, 2, 52);
 }
 
 a {
@@ -18,7 +18,6 @@ a {
 }
 
 .navbar {
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -46,7 +45,7 @@ a {
 .navbar ul li a {
     font-size: 15px;
     font-weight: 400;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navbar ul li a {
@@ -56,7 +55,7 @@ a {
     border-radius: 40%;
     font-size: 15px;
     color: chartreuse;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navbar ul li a:hover {
@@ -69,7 +68,7 @@ a {
 .home {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
     padding: 60px 9% 0;
     color: white;
 }
@@ -102,7 +101,7 @@ a {
 }
 
 .home-info h3 span::before {
-    content: attr(data-text);
+    content: attr(data-text);   /* data text html attribute ko css me read krega */
     position: absolute;
     width: 0;
     border-right: 2px solid rgb(85, 255, 47);
@@ -224,8 +223,6 @@ a {
     0 0 40px #7cf03d;
 }
 
-
-
 .home-img .img-box .img-item {
     position: relative;
     width: 100%;
@@ -316,6 +313,104 @@ a {
   .home-info .btn-sci .sci a:hover {
     transform: none;
   }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  gap: 10px;
+  max-width: 350px;
+  background: #1f242d;
+  padding: 20px;
+  border-radius: 20px;
+  left: 50%;
+  top:120%;
+  transform: translate(-50%,-50%);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(172, 255, 170);
+  letter-spacing: 0.3px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+.message {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label input{
+  width: 300px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 20px 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.form label input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: #243224;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+} 
+
+.form label input:focus + span,
+.form label input:valid + span {
+  top: 30px;
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
+.form label input:valid + span {
+  color: #00ff66;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #00ff66;
+  color: white;
+  border-radius: 10px;
+  width: 300px;
+  padding: 8px;
+  font-size: 14px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: rgb(120, 255, 47);
+  color: #1f242d;
+  box-shadow: 0 0 10px rgb(120, 255, 47);
+  transform: scale(1.1);  
 }
 
 .menu-icon {
